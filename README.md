@@ -18,9 +18,11 @@ POSTGRES_USERNAME
 e.g. postgres
 ```
 
+This project was created in IntelliJ, and uses maven.
+
 See index.html for endpoint definitions and more developer info.
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
