@@ -1,5 +1,7 @@
 # code-with-quarkus
 
+A demo Quarkus project, that connects to a PostgreSQL database via various endpoints (resources).
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
