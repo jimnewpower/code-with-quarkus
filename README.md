@@ -2,6 +2,24 @@
 
 A demo Quarkus project, that connects to a PostgreSQL database via various endpoints (resources).
 
+The application.properties relies on the following environment variable definitions:
+```
+POSTGRES_JDBC_URL
+e.g. jdbc:postgresql://localhost:5432/postgres
+```
+
+```
+POSTGRES_PASSWORD
+This is the password that you used when you created your Postgres database.
+```
+
+```
+POSTGRES_USERNAME
+e.g. postgres
+```
+
+See index.html for endpoint definitions and more developer info.
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
@@ -11,6 +29,10 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
+```
+or simply
+```shell script
+mvn compile quarkus:dev
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
