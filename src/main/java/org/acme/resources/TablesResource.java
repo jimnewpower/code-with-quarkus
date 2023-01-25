@@ -36,7 +36,8 @@ public class TablesResource {
             messageBuilder.append("Tables:").append("\n");
             ResultSet tables = metaData.getTables(null, null, "%", types);
             while (tables.next()) {
-                messageBuilder.append(tables.getString("TABLE_NAME")).append("\n");
+                String tableName = tables.getString("TABLE_NAME");
+                messageBuilder.append(String.format("\t%s\n", tableName));
             }
         } catch (SQLException e) {
             messageBuilder.append(e.getMessage()).append("\n");
